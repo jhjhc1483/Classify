@@ -19,6 +19,14 @@ VS Code에서 터미널을 하나 더 추가합니다 (우측 상단 + 버튼).
 
 cd frontend 입력
 
+npm install -D tailwindcss postcss autoprefixer (tailwindcss 설치)
+
+노드 모듈 재설치 (깔끔한 초기화)
+기존 설정을 지우고 다시 설치
+frontend 폴더 안에 있는 node_modules 폴더와 package-lock.json 파일을 삭제
+터미널에서 frontend 폴더로 이동
+npm install을 입력하여 모든 패키지를 다시 설치
+
 npm run dev
 
 성공 시: Ready in ... http://localhost:3000 메시지가 뜹니다.
