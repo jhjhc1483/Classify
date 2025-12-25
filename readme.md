@@ -22,10 +22,28 @@ cd frontend 입력
 npm install -D tailwindcss postcss autoprefixer (tailwindcss 설치)
 
 노드 모듈 재설치 (깔끔한 초기화)
+
 기존 설정을 지우고 다시 설치
+
 frontend 폴더 안에 있는 node_modules 폴더와 package-lock.json 파일을 삭제
+
 터미널에서 frontend 폴더로 이동
+
 npm install을 입력하여 모든 패키지를 다시 설치
+
+이전 경로의 찌꺼기가 남지 않도록 캐시를 비우고 다시 설치
+
+# npm 캐시 강제 삭제
+npm cache clean --force
+
+# 패키지 새로 설치
+npm install
+
+Tailwind CSS 강제 재연결 (필요한 경우)
+만약 위 단계를 거쳤는데도 계속 못 찾는다면, Tailwind만 다시 설치해 줍니다.
+
+npm install -D tailwindcss postcss autoprefixer
+
 
 npm run dev
 
