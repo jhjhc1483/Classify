@@ -54,4 +54,5 @@ for dept, content in departments.items():
     pdf.chapter_title(dept)
     pdf.chapter_body(content)
 
+
 pdf.output('regulation.pdf')
